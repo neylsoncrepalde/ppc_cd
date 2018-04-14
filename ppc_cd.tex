@@ -9,10 +9,12 @@
 \usepackage{rotating}
 \usepackage{epstopdf}
 \usepackage[alf,abnt-and-type=&]{abntex2cite}
-\usepackage[a4paper, left=2cm, right=2cm, top=2cm, bottom=2cm]{geometry}
+\usepackage[a4paper, left=2cm, right=2cm, top=3cm, bottom=3cm]{geometry}
 \usepackage{indentfirst}
 \usepackage{longtable}
+\usepackage{TikZ}
 \pagestyle{plain}
+
 
 \titulo{Projeto Pedagógico do Curso Superior de Tecnologia em Ciência de Dados}
 \autor{Centro Universitário Metodista Izabela Hendrix}
@@ -21,8 +23,21 @@
 \local{Belo Horizonte}
 
 \begin{document}
+
+\thispagestyle{empty}
+	\begin{tikzpicture}[remember picture, overlay]
+	\node[inner sep=0pt] at (current page.center) {%
+		\includegraphics[width=\paperwidth,height=\paperheight]{capa_ppc_cd.png}%
+	};
+	\end{tikzpicture}
+	\cleardoublepage{}
+	
+	
+	\newpage
+	
+
 \pretextual
-\imprimircapa
+%\imprimircapa
 %\listoffigures
 %\listoftables
 \newpage
@@ -93,7 +108,13 @@ Na tradição metodista, as escolas não são apenas lugar de estudar, sendo tam
 
 \section{Histórico do Curso}
 
-MONTAR O HISTÓRICO DO CURSO!!!!!!
+A \textit{Harvard Business Review} em um artigo de 2012 classificou a profissão de Cientista de Dados como ``\textit{the sexiest job of the 21st century}''. Essa explosão protagonizada por um profissional altamente capacitado e com formação multidisciplinar passou pela América do Norte, pela Europa e neste momento chega ao Brasil agitando o mercado das empresas consolidadas em todos os setores econômicos e \textit{startups}.
+
+Apesar de toda a inquietação do mercado em relação à nova área, ainda é muito difícil conseguir profissionais com formação e habilidades adequadas ao trabalho. Isso se deve em parte ao fato de que a área requer uma construção de competências e habilidades altamente interdisciplinar envolvendo cálculo, estatística avançada, programação, bancos de dados e conhecimentos em negócios quanto à inexistência de um curso de graduação específico até a data da redação deste documento.
+
+Assim, no primeiro semestre de 2018 foi inaugurado o Curso Superior de Tecnologia em Ciências de Dados do Centro Universitário Metodista Izabela Hendrix, o primeiro curso de graduação do Brasil nessa nova área. 
+
+Alguém que deseja perseguir a carreira de cientista de dados deve buscar formação superior em Ciências Econômicas ou Matemática ou Estatística ou Ciências da Computação ou Ciências Sociais Aplicadas (com ênfase quantitativa) e depois buscar um MBA ou um mestrado específico na área. Desse modo, pretendemos deixar transparente a importância da criação do primeiro curso de graduação específico em Ciência de Dados do Brasil em que o aluno possa ter acesso aos diversos conteúdos a ele necessários e se desenvolver enquanto profissional com foco.
 
 
 \chapter{Marco Referencial}
@@ -246,7 +267,7 @@ Este projeto pedagógico pretende garantir que a graduação em Ciência de Dado
 
 O Curso Superior de Tecnologia em Ciência de Dados do Centro Universitário Metodista Izabela Hendrix foi idealizado tendo o paradigma da complexidade como norteador epistemológico. Isso reflete-se na lógica de organização da matriz curricular, que evita a linearidade, situação em que o conhecimento resultaria de uma sequência de disciplinas com conteúdos que dependiam necessariamente de uma disciplina anterior. Nossa proposta opta o quanto possível por uma lógica não linear, que pode ser compreendida sob dois aspectos.
 
-No primeiro deles, todas as disciplinas do curso são divididas entre disciplinas de formação básica e disciplinas de formação específica. Dentro da formação básica, desdobram-se duas dimensões. A primeira delas abarca um conjunto de disciplinas que trata da Relação ser humano-sociedade. A segunda formada pelo conjunto de disciplinas que irão promover a formação específica.
+No primeiro deles, todas as disciplinas do curso são divididas entre disciplinas de forma-ção básica e disciplinas de formação específica. Dentro da formação básica, desdobram-se duas dimensões. A primeira delas abarca um conjunto de disciplinas que trata da Relação ser humano-sociedade. A segunda formada pelo conjunto de disciplinas que irão promover a formação específica.
 
 Tal dimensão é fundamental para o desenvolvimento do pensamento científico e por métodos investigativos que serão a base das relações com a busca pelo conhecimento e a informação.
 
@@ -308,7 +329,7 @@ Espera-se que todo aluno formado pelo Centro Universitário Metodista Izabela He
 \item Filtrar e separar, na grande massa de informações disponíveis, o útil do inútil, discernindo entre o importante e o supérfluo, com autonomia para dar continuidade, ao longo de toda vida, ao seu processo de aprendizado;
 \item Viver e trabalhar com efetividade e confiança em uma sociedade de informação, dentro de uma comunidade global, respeitando e valorizando as diferentes culturas;
 \item Adquirir uma sólida cultura geral e espírito enlevado, transcendendo a mera formação para o exercício de uma profissão;
-\item Trabalhar em grupo respeitando e valorizando os diferentes pontos de vista, beneficiando-se deles e colaborando para a integração das diferenças em prol de um bem-estar coletivo sempre em construção;
+\item Trabalhar em grupo respeitando e valorizando os diferentes pontos de vista, benefician-do-se deles e colaborando para a integração das diferenças em prol de um bem-estar coletivo sempre em construção;
 \item Exercitar a solidariedade e a alteridade, seja individualmente, seja coletivamente, assumindo sua responsabilidade social, como egresso do ensino superior;
 \item Colaborar na construção do saber e para repassar o conhecimento às comunidades científicas e leigas, contribuindo com os cidadãos nos seus direitos de acesso e uso da informação;
 \item Denunciar com prontidão todo e qualquer tipo de discriminação ou dominação que marginalize a pessoa humana e ameace a existência de seres vivos;
@@ -338,6 +359,8 @@ Cabe ainda à educação desvendar os mascaramentos ideológicos de sua atividad
 
 Propõe-se nortear as práticas de ensino do Centro Universitário pelos seguintes conceitos:
 
+\vspace{5mm}
+
 \textbf{a. Práticas de ensino inclusivas}
 
 Conscientes de que o acesso à educação superior no Brasil ainda é privilégio de uma pequena parcela da população brasileira com idade entre 18 e 24 anos o Izabela Hendrix lida com um dado de realidade que se torna ponto chave na releitura dos seus princípios vocacionais. Sendo uma instituição confessional e filantrópica, parte desta vocação, em princípio, está estruturada, como o demonstrado neste PDI, pela própria natureza da instituição, ou seja, destinar a filantropia à distribuição de bolsas de estudo.
@@ -354,6 +377,8 @@ Exemplos dessas concepções e de suas práticas podem ser percebidas na:
 \item Viabilização de horários flexíveis e adequados ao ritmo e empenho pessoal de cada aluno(a). Cada aluno(a) tem o seu tempo de dedicação pessoal, e seu ritmo próprio de aprendizagem que écondicionado por diversos fatores pessoais, de ordem familiar e/ou profissional. Ao incluir disciplinas em EAD e/ou semi-presenciais, bem como atividades de trabalho independente em locais e tempos diferenciados, o Izabela Hendrix tem em vista que está lidando com instrumentos pedagógicos capazes de flexibilizar o curso e garantir que os momentos de formação não sejam medidos apenas pela organização rígida de horários semanais de aula, nem pelo espaço propiciado apenas pela escola para que dê conta de suas atividades e estudos, bem como de suas aplicações práticas.
 \end{itemize}
 
+\vspace{5mm}
+
 \textbf{b. Práticas pedagógicas expandidas e consequente formação de outros espaços de aprendizado}
 
 No Izabela Hendrix está claro que o ensino não está dissociado da pesquisa e da extensão. Desta forma, não se pode ter a pesquisa e a extensão dos cursos como práticas diversas do cotidiano de aprendizagem. Neste sentido é preciso pensar em renovar, expandir e repensar constantemente as práticas pedagógicas e constantemente recriar os espaços de aprendizado. O incentivo às práticas pedagógicas expandidas e a formação de outros espaços de aprendizado depende da concepção dos sujeitos da pesquisa, dos sujeitos da extensão, dos sujeitos do ensino, estes sujeitos que fazem parte da vida acadêmica, sujeitos do saber, alunos(as) e professores(as) são os(as) que não dissociam as práticas ensino-pesquisa-extensão.
@@ -364,9 +389,13 @@ A instituição, por mais que seja estruturada como tal, não deseja ser uma lin
 
 Não se pode confundir a prática dos sujeitos do saber com a organização funcional. O sujeito do saber independe da organização funcional. A prática de ensino dos sujeitos do saber ocorre em qualquer instância, em qualquer espaço, tempo, lugar, com ou sem recursos. O fim da instituição é somar o potencial individual de cada um destes sujeitos dando corpo a uma universidade, no seu melhor sentido de universalizar idéias e ideais, com universos pessoais diferentes e diferenciados, que se dirige a um universo do alunado dispare e por isso mesmo rico e pleno de possibilidades de realização e de criação de coisas novas. Traz em si o desafio de se repensar a educação, a sociedade, as próprias possibilidades e suas concretudes. No Izabela Hendrix a formação não se limita a um grupo de disciplinas, da exposição e consumo de conhecimentos, do aprender de uma técnica e/ou um saber fazer específico. São desenvolvidos espaços de aprendizado capazes de interferir na formação, o que permite ao conhecimento se transformar num procedimento cotidiano, numa prática cada vez mais vinculada à rotina do sujeito do saber. Desta forma a extensão, a pesquisa e a pós-graduação assumem responsabilidades com cada um(a) dos estudantes em programas de graduação.
 
+\vspace{5mm}
+
 \textbf{c. Formação de cidadãos críticos, criativos e socialmente responsáveis}
 
-Educar e formar cidadãos(ãs) qualificados(as) e críticos(as), com base em valores cristãos, para atuar na transformação da sociedade é parte da missão do Centro Universitário. Entretanto, a formação crítica não se completa sem uma reação propositiva. A reação à crítica deve ser traduzida numa alternativa, numa solução, numa proposta criativa de superação de uma situação-problema. O(A) cidadão(ã) criativo(a) atua em prol de estilos de vida sustentáveis. São cidadãos(ãs) que buscam soluções alternativas para problemas comuns ao dia-a-dia, voltados para um padrão de bem-estar social, baseado em produtos e serviços sustentáveis, que viabilizem soluções eficientes e acessíveis para o cotidiano das pessoas. São práticas de inovação social sustentável aplicados ao cotidiano e propiciando novos modos de vida responsáveis.
+Educar e formar cidadãos(ãs) qualificados(as) e críticos(as), com base em valores cris-tãos, para atuar na transformação da sociedade é parte da missão do Centro Universitário. Entretanto, a formação crítica não se completa sem uma reação propositiva. A reação à crítica deve ser traduzida numa alternativa, numa solução, numa proposta criativa de superação de uma situação-problema. O(A) cidadão(ã) criativo(a) atua em prol de estilos de vida sustentáveis. São cidadãos(ãs) que buscam soluções alternativas para problemas comuns ao dia-a-dia, voltados para um padrão de bem-estar social, baseado em produtos e serviços sustentáveis, que viabilizem soluções eficientes e acessíveis para o cotidiano das pessoas. São práticas de inovação social sustentável aplicados ao cotidiano e propiciando novos modos de vida responsáveis.
+
+\vspace{5mm}
 
 \textbf{d. Uma comunidade de aprendizado contínuo}
 
@@ -434,7 +463,7 @@ Objetivos da pesquisa:
 \item democratizar o acesso aos incentivos institucionais de apoio à pesquisa, através de processo seletivo específico;
 \item dar maior consistência aos Trabalhos de Conclusão de Curso (TCC/TFG), exigindo que sejam realizados individualmente, permitindo o desenvolvimento da autonomia intelectual do alunado, e a expressão de suas capacidades e habilidades na área de sua formação;
 \item dar continuidade aos trabalhos do Comitê de Ética em Pesquisa, apoiando e oferecendo as condições necessárias para seu funcionamento, de acordo com as normas estabelecidas pela Comissão Nacional de Ética em Pesquisa (CONEP);
-\item ampliar e consolidar as pesquisas existentes nos cursos de graduação, e pós-graduação lato sensu, possibilitando seu avanço e aprofundamento nos cursos criados na pós-graduação stricto sensu;
+\item ampliar e consolidar as pesquisas existentes nos cursos de graduação, e pós-gradua-ção lato sensu, possibilitando seu avanço e aprofundamento nos cursos criados na pós-graduação stricto sensu;
 \item organizar eventos internos e sistemáticos de divulgação de nossas pesquisas, bem como participar de eventos externos, tais como os realizados pelas associações de docentes, versos órgãos e agências de fomento, como CAPES, CNPq, e FAPEMIG, Fórum de Pró-Reitores de Pesquisa e FAUBAI;
 \item estabelecer contatos com agências de fomento e entidades patrocinadoras de projetos de pesquisa e de iniciação científica, buscando aportes para a ampliação dos recursos institucionais.
 \end{itemize}
@@ -553,9 +582,9 @@ A organização curricular deste curso segue ao que determina a Resolução 04/2
     \hline
     Inovações Tecnológicas e Patentes & 40 \\
     \hline
-    \textit{E-commerce} & 40 \\
+    E-commerce: vendas online & 40 \\
     \hline
-    \textit{Business Intelligence} & 40 \\
+    Business Intelligence & 40 \\
     \hline
     TOTAL & 240 \\
     \hline
@@ -767,7 +796,7 @@ O plano sugerido para o curso noturno é de cinco semestres distribuídos confor
     \hline
     Inovações Tecnológicas e Patentes & 40 & & 40 \\
     \hline
-    E-commerce & 20 & 20 & 40 \\
+    E-commerce: vendas online & 20 & 20 & 40 \\
     \hline
     Natural Language Processing & 40 & 40 & 80 \\
     \hline
@@ -814,11 +843,11 @@ O plano sugerido para o curso noturno é de cinco semestres distribuídos confor
 
 \section{Atividades Práticas Supervisionadas (APS's)}
 
-As Atividades Práticas Supervisionadas – APS, constituem parte da carga horária das disciplinas do curso e são propostas com o objetivo de promover a autonomia do aluno, estimular o trabalho em grupo e reforçar a compreensão e aplicação dos conteúdos.
+As Atividades Práticas Supervisionadas – APS's, constituem parte da carga horária das disciplinas do curso e são propostas com o objetivo de promover a autonomia do aluno, estimular o trabalho em grupo e reforçar a compreensão e aplicação dos conteúdos.
 
-As APS são detalhadas nos Planos de Ensino das disciplinas como Horas Extraclasse e são desenvolvidas sob a orientação, supervisão e avaliação dos docentes, não cabendo o seu aproveitamento como Atividades Complementares, posto que se tratam de complementação de carga horária de cada disciplina do semestre.
+As APS's são detalhadas nos Planos de Ensino das disciplinas como Horas Extraclasse e são desenvolvidas sob a orientação, supervisão e avaliação dos docentes, não cabendo o seu aproveitamento como Atividades Complementares, posto que se tratam de complemen-tação de carga horária de cada disciplina do semestre.
 
-Dessa forma, o curso Tecnológico em Bioinformática do CEUNIH possui a hora aula de 50 minutos, complementando a carga horária de 60 minutos, estabelecida por legislação, por meio das APS.
+Dessa forma, o Curso Superior de Tecnologia em Ciência de Dados do CEUNIH possui a hora aula de 50 minutos, complementando a carga horária de 60 minutos, estabelecida por legislação, por meio das APS's.
 
 \chapter{interdisciplinaridade}
 
